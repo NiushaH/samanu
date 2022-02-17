@@ -1,0 +1,2 @@
+class Newsboard < ApplicationRecord
+end
