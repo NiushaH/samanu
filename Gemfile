@@ -31,9 +31,6 @@ gem 'jbuilder', '~> 2.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Make errors better looking
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
-
 # Bulma CSS is like a lean, modern version of Bootstrap (you can use Foundation)
 gem 'bulma-rails', '~> 0.9.2'
 
@@ -69,8 +66,9 @@ group :development do
   # Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard', '~> 2.18'
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
-
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false 
+  # Make errors better looking
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 end
 
 group :test do
