@@ -37,6 +37,9 @@ gem 'bulma-rails', '~> 0.9.2'
 # Forms made easy!
 gem 'simple_form', '~> 5.1'
 
+#Retrieve the binding of a method's caller. Can also retrieve bindings even further up the stack.
+# gem 'binding_of_caller', '~> 0.7.2'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
