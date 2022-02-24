@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Samanu</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/newspaper.css">
+    <title>Samanu // A Flatiron Phase 3 Rails Project</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +13,23 @@
   </head>
 
   <body>
+    <h1 class="title">User Name -- Link to Account Preferences<h1>
+
+    <div class="head">
+        <div class="headerobjectswrapper">
+            <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div>
+            <header>
+                <section class="section">
+                    <div class="container">
+                    <% @newsboards.each do |newsboard| %>
+                      <p class="title is-4"> <%= newsboard.title %></p>
+                    <% end %>
+                    </div>
+                </section>          
+            </header>
+        </div>
+        <div class="subhead">York, MA - Thursday August 30, 1978 - Seven Pages</div>
+    </div>
     <%= yield %>
   </body>
 </html>

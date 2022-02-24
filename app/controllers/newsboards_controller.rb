@@ -1,7 +1,7 @@
 class NewsboardsController < ApplicationController
 
   def index
-    @newsboard = Newsboard.all.order("create_at DESC")
+    @newsboards = Newsboard.all.order("created_at DESC")
   end
 
   def new
