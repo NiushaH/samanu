@@ -1,32 +1,39 @@
-    <div class="content">
-        <div class="columns">
-            <div class="column">
-                <div class="head"><span class="headline hl3">Inspirational Quote for the Day</span><p><span class="headline hl4">by ???</span></p></div>
-                There was some text here</p></div>
-            <div class="column">
-                <div class="head"><span class="headline hl5">CHECK OUT CSS GRID OPTIONS FOR CATEGORIES -- https://css-tricks.com/techniques-for-a-newspaper-layout-with-css-grid-and-border-lines-between-elements/ explains HOW TO DIY this well</span><p><span class="headline hl6">Remember that grid items can be flex parents -- see https://css-tricks.com/css-grid-replace-flexbox/</span></p></div>
-                And flex items can be grid parents</p>
-          <figure class="figure">
-                    <img class="media" src="http://i.giphy.com/PW7MoTD2d9pJK.gif" alt="">
-                    <figcaption class="figcaption">Image caption</figcaption>
-                </figure>
+<% content_for :page_title, "Index" %>
 
-                <p>More text</p>
+<section class="section">
+  <div class="container">
+    <% @articles.each do |article| %>
+        <div class="content">
+            <div class="columns">
+                <div class="column">
+                    <div class="head"><span class="headline hl3">Inspirational Quote for the Day</span><p><span class="headline hl4">by ???</span></p></div>
+                    There was some text here</p></div>
+                <div class="column">
+                    <div class="head"><span class="headline hl5">CHECK OUT CSS GRID OPTIONS FOR CATEGORIES -- https://css-tricks.com/techniques-for-a-newspaper-layout-with-css-grid-and-border-lines-between-elements/ explains HOW TO DIY this well</span><p><span class="headline hl6">Remember that grid items can be flex parents -- see https://css-tricks.com/css-grid-replace-flexbox/</span></p></div>
+                    And flex items can be grid parents</p>
+            <figure class="figure">
+                        <img class="media" src="http://i.giphy.com/PW7MoTD2d9pJK.gif" alt="">
+                        <figcaption class="figcaption">Image caption</figcaption>
+                    </figure>
 
-                <p>More text</p>
+                    <p>More text</p>
 
-                </div>
-            <div class="column"><div class="head"><span class="headline hl1">Headline</span><p><span class="headline hl2">More text here</span></p></div>More text here</p>
-      <figure class="figure">
-                    <img class="media" src="http://i.giphy.com/4fDWVPMoSyhgc.gif" alt="">
-                    <figcaption class="figcaption">"Caption for image"</figcaption>
-                </figure>
-                <p>More text <span class="citation">Citation</span> More text here</p>
-                <p>More text here</p></div>
-            <div class="column"><div class="head"><span class="headline hl3">Headline </span><p><span class="headline hl4">More text here</span></p></div><p>Story text here</p></div>
-            <div class="column"><div class="head"><span class="headline hl1">Headline </span><p><span class="headline hl4">byline</span></p></div><p>Story text here </p>
-              
-              <p>More text here.</p></div>
+                    <p>More text</p>
+
+                    </div>
+                <div class="column"><div class="head"><span class="headline hl1">Headline</span><p><span class="headline hl2">More text here</span></p></div>More text here</p>
+        <figure class="figure">
+                        <img class="media" src="http://i.giphy.com/4fDWVPMoSyhgc.gif" alt="">
+                        <figcaption class="figcaption">"Caption for image"</figcaption>
+                    </figure>
+                    <p>More text <span class="citation">Citation</span> More text here</p>
+                    <p>More text here</p></div>
+                <div class="column"><div class="head"><span class="headline hl3">Headline </span><p><span class="headline hl4">More text here</span></p></div><p>Story text here</p></div>
+                <div class="column"><div class="head"><span class="headline hl1">Headline </span><p><span class="headline hl4">byline</span></p></div><p>Story text here </p>
+                
+                <p>More text here.</p></div>
+            </div>
         </div>
-    </div>
+      <% end %>  
+  </div>  
 </section>

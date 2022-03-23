@@ -13,8 +13,16 @@
   </head>
 
   <body>
-    <h1 class="title">User Name -- Link to Account Preferences<h1>
-
+    <h1 class="title">User Name -- Create NavBarMenu with Link to Account & Preferences<h1>
+    <%# <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <%= link_to "Newsboard Preferences", newsboard_path, class:"navbar-item" %>
+      </div>
+      <%# <div class="navbar-next-to-end">
+        <%= link_to "My Account", user_edit_path, class:"navbar-item" %>
+      </div>
+    </div> %> %>
+    
     <div class="head">
         <div class="headerobjectswrapper">
             <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div>
